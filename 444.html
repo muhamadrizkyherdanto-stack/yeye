@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Ilmiah Populer - Pendidikan dan Budaya</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", serif;
+            font-size: 12pt;
+            line-height: 1.8;
+            color: #222;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 45px 55px;
+            background-color: white;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 22pt;
+            text-transform: uppercase;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            font-style: italic;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 15pt;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 13pt;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: left;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            text-indent: 35px;
+        }
+
+        .abstrak {
+            margin: 25px 0;
+            padding: 18px;
+            background: #f5f7fa;
+            border-left: 4px solid #315b7d;
+        }
+
+        .abstrak h2 {
+            margin-top: 0;
+        }
+
+        .abstrak p {
+            text-indent: 0;
+        }
+
+        .kata-kunci {
+            font-size: 11pt;
+        }
+
+        .daftar-pustaka {
+            padding-left: 25px;
+        }
+
+        .daftar-pustaka li {
+            margin-bottom: 12px;
+            padding-left: 5px;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            color: #174f86;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            border-top: 1px solid #ccc;
+            margin-top: 35px;
+            padding-top: 12px;
+            text-align: center;
+            color: #666;
+            font-size: 10pt;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 25px 20px;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 19pt;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                max-width: none;
+                margin: 0;
+                padding: 2cm;
+                box-shadow: none;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+        /* Tampilan editorial bernuansa hangat */
+        :root {
+            --ink: #27343a;
+            --muted: #687477;
+            --accent: #a34f35;
+            --accent-dark: #773a2a;
+            --paper: #fffefa;
+            --wash: #f7f1e8;
+        }
+
+        body {
+            padding: 1px 20px;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--ink);
+            background: linear-gradient(135deg, #eee9df 0%, #f8f5ef 55%, #e9eee9 100%);
+        }
+
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: 48px auto;
+            padding: 58px 76px;
+            background: var(--paper);
+            border: 1px solid rgba(120, 91, 66, 0.12);
+            border-radius: 8px;
+            box-shadow: 0 18px 55px rgba(54, 48, 38, 0.12);
+        }
+
+        header {
+            margin-bottom: 38px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #e8ddd0;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            color: var(--accent-dark);
+            letter-spacing: 0.045em;
+        }
+
+        .subtitle {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .byline {
+            margin: 14px 0 0;
+            color: var(--accent);
+            font-family: Arial, sans-serif;
+            font-size: 0.78em;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            text-align: center;
+            text-indent: 0;
+            text-transform: uppercase;
+        }
+
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 24px 0 0;
+        }
+
+        .site-nav a {
+            padding: 7px 12px;
+            border: 1px solid #eadfd4;
+            border-radius: 999px;
+            background: var(--paper);
+            color: var(--accent-dark);
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .site-nav a:hover,
+        .site-nav a:focus-visible {
+            background: var(--wash);
+            outline: 2px solid rgba(163, 79, 53, 0.3);
+            outline-offset: 2px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id] {
+            scroll-margin-top: 24px;
+        }
+
+        .group-members {
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            line-height: 1.6;
+            text-align: center;
+            text-indent: 0;
+        }
+
+        .group-members strong {
+            color: var(--accent-dark);
+        }
+
+        h2 {
+            margin-top: 36px;
+            padding-bottom: 8px;
+            color: var(--accent-dark);
+            border-bottom: 1px solid #eadfd4;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+            color: #526356;
+        }
+
+        p {
+            line-height: 1.85;
+        }
+
+        .abstrak {
+            margin: 30px 0 36px;
+            padding: 22px 25px;
+            background: var(--wash);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 6px 6px 0;
+        }
+
+        .article-quote {
+            margin: 30px 0;
+            padding: 20px 26px;
+            border-left: 5px solid var(--accent);
+            border-radius: 0 10px 10px 0;
+            background: #f3e8dc;
+            color: var(--accent-dark);
+            font-size: 1.25rem;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            margin: 26px 0;
+            padding: 18px 22px;
+            border: 1px solid #eadfd4;
+            border-left: 5px solid var(--accent);
+            border-radius: 8px;
+            background: var(--wash);
+            color: var(--ink);
+            box-shadow: 0 8px 20px rgba(54, 48, 38, 0.08);
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--accent-dark);
+            font-family: Arial, sans-serif;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: var(--ink);
+            text-indent: 0;
+        }
+
+        .article-quote p {
+            margin: 0;
+            text-indent: 0;
+        }
+
+        .article-quote cite {
+            display: block;
+            margin-top: 10px;
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .abstrak h2 {
+            margin-bottom: 8px;
+            border-bottom: 0;
+        }
+
+        .kata-kunci {
+            padding-top: 10px;
+            color: #515d58;
+            border-top: 1px solid #e8ddd0;
+        }
+
+        .daftar-pustaka {
+            padding-left: 28px;
+        }
+
+        .daftar-pustaka li {
+            padding-left: 8px;
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration-color: #c7a18e;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            color: var(--muted);
+            border-top-color: #e8ddd0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1px 12px;
+            }
+
+            .container {
+                margin: 16px auto;
+                padding: 30px 22px;
+                border-radius: 6px;
+            }
+
+            header {
+                margin-bottom: 28px;
+            }
+
+            h1 {
+                font-size: 19pt;
+            }
+
+            h2 {
+                margin-top: 30px;
+            }
+
+            .abstrak {
+                padding: 18px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                color: #222;
+                background: white;
+            }
+
+            .container {
+                border: 0;
+                border-radius: 0;
+            }
+
+            .comment-form,
+            .cheer-box {
+                display: none;
+            }
+        }
+
+        .cheer-box {
+            display: grid;
+            justify-items: center;
+            gap: 8px;
+            margin: -16px 0 30px;
+            text-align: center;
+        }
+
+        .cheer-button {
+            padding: 9px 16px;
+            border: 1px solid #eadfd4;
+            border-radius: 999px;
+            background: var(--wash);
+            color: var(--accent-dark);
+            font: inherit;
+            cursor: pointer;
+            transition: transform 160ms ease, background-color 160ms ease;
+        }
+
+        .cheer-button:hover {
+            background: #f0e3d5;
+            transform: translateY(-2px);
+        }
+
+        .cheer-button:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .cheer-message {
+            min-height: 1.8em;
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95em;
+            text-align: center;
+            text-indent: 0;
+        }
+
+        .comments {
+            margin-top: 38px;
+            padding-top: 8px;
+        }
+
+        .comment-form {
+            display: grid;
+            gap: 14px;
+            padding: 22px;
+            background: var(--wash);
+            border: 1px solid #eadfd4;
+            border-radius: 8px;
+        }
+
+        .comment-form label {
+            display: grid;
+            gap: 6px;
+            color: var(--accent-dark);
+            font-weight: bold;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #d8cbbd;
+            border-radius: 5px;
+            background: #fffefa;
+            color: var(--ink);
+            font: inherit;
+        }
+
+        .comment-form textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .comment-form input:focus,
+        .comment-form textarea:focus {
+            outline: 2px solid rgba(163, 79, 53, 0.25);
+            border-color: var(--accent);
+        }
+
+        .comment-form button {
+            justify-self: start;
+            padding: 10px 18px;
+            border: 0;
+            border-radius: 5px;
+            background: var(--accent-dark);
+            color: white;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        .comment-form button:hover {
+            background: var(--accent);
+        }
+
+        .view-comments {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--accent-dark);
+            font-weight: bold;
+            text-underline-offset: 3px;
+        }
+
+        .comment-list {
+            display: grid;
+            gap: 14px;
+            padding: 0;
+            list-style: none;
+            scroll-margin-top: 20px;
+        }
+
+        .comment-item {
+            padding: 16px 18px;
+            border: 1px solid #eadfd4;
+            border-radius: 6px;
+            background: #fffefa;
+        }
+
+        .comment-item strong {
+            color: var(--accent-dark);
+        }
+
+        .comment-date {
+            margin-left: 8px;
+            color: var(--muted);
+            font-size: 0.85em;
+        }
+
+        .comment-item p,
+        .empty-comments {
+            margin: 8px 0 0;
+            text-align: left;
+            text-indent: 0;
+            white-space: pre-wrap;
+        }
+
+        .empty-comments {
+            color: var(--muted);
+        }
+
+        .article-paragraph {
+            position: relative;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+        }
+
+        .article-paragraph:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .article-paragraph.is-active {
+            z-index: 1;
+            background-color: #f7f1e8;
+            box-shadow: 0 0 0 8px #f7f1e8;
+            transform: scale(1.015);
+        }
+
+        @keyframes fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes message-pop {
+            0% {
+                opacity: 0.35;
+                transform: scale(0.96);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .container {
+            animation: fade-up 650ms ease-out both;
+        }
+
+        .cheer-message.is-updating {
+            animation: message-pop 320ms ease-out;
+        }
+
+        .cheer-button:active {
+            transform: scale(0.97);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .container {
+                animation: none;
+            }
+
+            .article-paragraph,
+            .cheer-button {
+                transition: none;
+            }
+
+            .interview-result {
+                animation: none;
+            }
+
+            .cheer-message.is-updating {
+                animation: none;
+            }
+        }
+
+        /* Sentuhan akhir untuk keterbacaan dan tampilan layar kecil */
+        h1 {
+            font-size: clamp(1.75rem, 4vw, 2.35rem);
+            text-wrap: balance;
+        }
+
+        .group-members {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            margin: 16px auto 0;
+            padding: 9px 16px;
+            border: 1px solid #eadfd4;
+            border-radius: 999px;
+            background: var(--wash);
+            font-size: 1em;
+        }
+
+        .cheer-box {
+            position: relative;
+            z-index: 2;
+            padding: 18px 16px;
+            border: 1px solid #eadfd4;
+            border-radius: 10px;
+            background: rgba(255, 254, 250, 0.72);
+        }
+
+        .cheer-button {
+            position: relative;
+            z-index: 1;
+            pointer-events: auto;
+            touch-action: manipulation;
+        }
+
+        .cheer-button,
+        .comment-form button {
+            transition: transform 160ms ease, background-color 160ms ease,
+                box-shadow 160ms ease;
+        }
+
+        .cheer-button:hover,
+        .comment-form button:hover {
+            box-shadow: 0 5px 14px rgba(119, 58, 42, 0.14);
+        }
+
+        .comment-form button:focus-visible,
+        .view-comments:focus-visible,
+        .comment-form input:focus-visible,
+        .comment-form textarea:focus-visible {
+            outline: 3px solid rgba(163, 79, 53, 0.35);
+            outline-offset: 3px;
+        }
+
+        .comment-item {
+            box-shadow: 0 3px 12px rgba(54, 48, 38, 0.04);
+        }
+
+        @media (max-width: 600px) {
+            .group-members {
+                border-radius: 10px;
+                line-height: 1.55;
+            }
+
+            .cheer-box {
+                margin-top: -8px;
+                padding: 15px 12px;
+            }
+
+            .comment-form {
+                padding: 18px;
+            }
+        }
+
+        @media print {
+            .group-members,
+            .cheer-box {
+                background: white;
+            }
+        }
+
+        .interview {
+            margin-top: 38px;
+            padding: 8px 22px 22px;
+            border: 1px solid #eadfd4;
+            border-radius: 10px;
+            background: var(--wash);
+        }
+
+        .interview p {
+            text-indent: 0;
+        }
+
+        .interview-result {
+            animation: fade-up 650ms 180ms ease-out both;
+        }
+
+        .interview-question {
+            margin-top: 20px;
+            margin-bottom: 6px;
+            color: var(--accent-dark);
+            font-weight: bold;
+        }
+
+        .interview-answer {
+            margin-top: 0;
+        }
+
+        .fun-ending {
+            margin-top: 38px;
+            padding: 8px 22px 22px;
+            border: 1px solid #eadfd4;
+            border-radius: 10px;
+            background: var(--wash);
+        }
+
+        .fun-ending h2 {
+            margin-top: 20px;
+        }
+
+        .fun-intro,
+        .fun-answer,
+        .fun-closing {
+            text-indent: 0;
+            text-align: left;
+        }
+
+        .fun-ending summary {
+            color: var(--accent-dark);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .joke-button {
+            padding: 10px 16px;
+            border: 0;
+            border-radius: 999px;
+            background: var(--accent-dark);
+            color: white;
+            font: inherit;
+            cursor: pointer;
+            transition: background-color 160ms ease, transform 160ms ease;
+        }
+
+        .joke-button:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .joke-button:focus-visible {
+            outline: 3px solid rgba(163, 79, 53, 0.35);
+            outline-offset: 3px;
+        }
+
+        .joke-question {
+            min-height: 1.8em;
+            margin: 14px 0 8px;
+            font-weight: bold;
+        }
+
+        .joke-button:active {
+            transform: scale(0.97);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .joke-button {
+                transition: none;
+            }
+        }
+
+        .fun-answer {
+            margin: 10px 0 0;
+            padding: 12px 14px;
+            border-radius: 6px;
+            background: var(--paper);
+        }
+
+        .fun-closing {
+            margin-bottom: 0;
+            color: var(--muted);
+        }
+
+        @media print {
+            .fun-ending {
+                background: white;
+            }
+        }
+
+        /* Penyempurnaan visual untuk pengalaman membaca yang lebih nyaman */
+        body {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            padding-top: 12px;
+        }
+
+        header::before {
+            display: block;
+            margin-bottom: 14px;
+            color: var(--accent);
+            content: "RUANG BELAJAR  ·  BUDAYA INDONESIA";
+            font-family: Arial, sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+        }
+
+        .subtitle {
+            font-size: 1.08rem;
+        }
+
+        .abstrak {
+            box-shadow: 0 8px 24px rgba(54, 48, 38, 0.05);
+        }
+
+        main.container > section:not(.abstrak):not(.comments):not(.fun-ending) {
+            margin: 34px 0;
+        }
+
+        main.container > section > h2 {
+            position: relative;
+            padding-left: 16px;
+            border-bottom: 0;
+        }
+
+        main.container > section > h2::before {
+            position: absolute;
+            top: 0.18em;
+            bottom: 0.28em;
+            left: 0;
+            width: 4px;
+            border-radius: 4px;
+            background: var(--accent);
+            content: "";
+        }
+
+        h3 {
+            margin-top: 26px;
+        }
+
+        p {
+            max-width: 72ch;
+        }
+
+        a {
+            font-weight: 600;
+        }
+
+        .daftar-pustaka li::marker {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .interview,
+        .fun-ending {
+            box-shadow: 0 8px 24px rgba(54, 48, 38, 0.05);
+        }
+
+        .comments {
+            padding-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 15px;
+                line-height: 1.75;
+            }
+
+            header::before {
+                font-size: 0.65rem;
+                letter-spacing: 0.12em;
+            }
+
+            main.container > section:not(.abstrak):not(.comments):not(.fun-ending) {
+                margin: 28px 0;
+            }
+        }
+
+        @media print {
+            header::before {
+                color: #555;
+            }
+
+            .abstrak,
+            .interview,
+            .fun-ending {
+                box-shadow: none;
+            }
+        }
+
+        @keyframes background-drift {
+            from {
+                background-position: 0% 50%;
+            }
+            to {
+                background-position: 100% 50%;
+            }
+        }
+
+        body {
+            background-size: 200% 200%;
+            animation: background-drift 22s ease-in-out infinite alternate;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            body {
+                animation: none;
+            }
+
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        @media print {
+            body {
+                animation: none;
+                background: white;
+            }
+        }
+
+        /* Penyegaran visual halaman */
+        header {
+            padding: 34px 28px 30px;
+            overflow: hidden;
+            border: 0;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #773a2a 0%, #a34f35 58%, #c47b4d 100%);
+            box-shadow: 0 12px 28px rgba(119, 58, 42, 0.18);
+        }
+
+        header::before {
+            color: #f3d6bc;
+        }
+
+        header h1 {
+            color: #fffefa;
+        }
+
+        header .subtitle {
+            color: rgba(255, 254, 250, 0.88);
+        }
+
+        header .byline {
+            color: #f3d6bc;
+        }
+
+        header .group-members {
+            border-color: rgba(255, 254, 250, 0.28);
+            background: rgba(255, 254, 250, 0.12);
+            color: #fffefa;
+        }
+
+        header .group-members strong {
+            color: #fffefa;
+        }
+
+        header .site-nav a {
+            border-color: rgba(255, 254, 250, 0.3);
+            background: rgba(255, 254, 250, 0.12);
+            color: #fffefa;
+            transition: background-color 160ms ease, transform 160ms ease;
+        }
+
+        header .site-nav a:hover,
+        header .site-nav a:focus-visible {
+            background: rgba(255, 254, 250, 0.24);
+            transform: translateY(-2px);
+        }
+
+        main.container > section:not(.abstrak):not(.comments):not(.fun-ending) {
+            padding: 24px 28px;
+            border: 1px solid #eee5db;
+            border-radius: 12px;
+            background: rgba(255, 254, 250, 0.82);
+            box-shadow: 0 8px 22px rgba(54, 48, 38, 0.045);
+        }
+
+        .abstrak {
+            border: 1px solid #eadfd4;
+            border-left: 4px solid var(--accent);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 26px 16px 22px;
+                border-radius: 10px;
+            }
+
+            main.container > section:not(.abstrak):not(.comments):not(.fun-ending) {
+                padding: 18px 16px;
+                border-radius: 9px;
+            }
+        }
+
+        @media print {
+            header {
+                padding: 0 0 20px;
+                border-radius: 0;
+                background: white;
+                box-shadow: none;
+            }
+
+            header h1,
+            header .subtitle,
+            header .byline,
+            header .group-members,
+            header .group-members strong {
+                color: #222;
+            }
+
+            header::before {
+                color: #555;
+            }
+
+            header .group-members,
+            header .site-nav a {
+                border-color: #ccc;
+                background: white;
+                color: #222;
+            }
+
+            main.container > section:not(.abstrak):not(.comments):not(.fun-ending) {
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Aksen warna untuk membantu pembaca memindai isi artikel */
+        main.container > section:not(.abstrak):not(.comments):not(.fun-ending) > h2 {
+            color: #8a402d;
+        }
+
+        main.container > section h3 {
+            color: #486650;
+        }
+
+        main.container > section:not(.abstrak):not(.comments):not(.fun-ending) > p {
+            color: #35464a;
+        }
+
+        .article-quote {
+            border-left-color: #b96743;
+            background: linear-gradient(135deg, #f5e8dc, #f8f1e8);
+            color: #773a2a;
+        }
+
+        .article-quote cite {
+            color: #687477;
+        }
+
+        main.container > section p a {
+            color: #8a402d;
+            text-decoration-color: #d5a17f;
+        }
+
+        main.container > section p a:hover {
+            color: #486650;
+        }
+
+        /* Ukuran tipografi yang lebih terbaca saat diproyeksikan */
+        body {
+            font-size: 24px;
+            line-height: 1.65;
+        }
+
+        h1 {
+            font-size: clamp(44px, 5vw, 56px);
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 29px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <h1>Belajar dari Budaya, Tumbuh Berkarakter</h1>
+            <div class="subtitle">
+                Dari bahasa daerah hingga gotong royong, budaya bisa membuat
+                pembelajaran lebih dekat dengan kehidupan anak muda.
+            </div>
+            <p class="byline">Artikel populer · Pendidikan dan budaya</p>
+            <p class="group-members">
+                <strong>Kelompok 2:</strong> Rizky Herdanto, Angga, Agas, Arvi, Reza, dan Windi
+            </p>
+            <nav class="site-nav" aria-label="Navigasi artikel">
+                <a href="#pengantar">Pengantar</a>
+                <a href="#merawat-budaya">Isi Artikel</a>
+                <a href="#wawancara">Wawancara</a>
+                <a href="#referensi">Referensi</a>
+                <a href="#comments-heading">Komentar</a>
+            </nav>
+        </header>
+
+        <section class="abstrak" id="pengantar" aria-label="Pengantar artikel">
+            <h2>Kenapa budaya perlu hadir di sekolah?</h2>
+            <p>
+                Belajar budaya bukan sekadar menghafal nama tarian atau pakaian
+                tradisional. Ketika siswa memainkan alat musik daerah, menyimak
+                cerita rakyat, atau bergotong royong, mereka sekaligus belajar
+                mengenali identitas, peduli pada sesama, dan menghargai perbedaan.
+            </p>
+            <p>
+                Pengalaman seperti ini bisa dihadirkan oleh sekolah, keluarga,
+                dan masyarakat—termasuk dengan bantuan teknologi. Yang penting,
+                budaya dikenalkan dengan cara menarik tanpa kehilangan maknanya.
+            </p>
+        </section>
+
+        <section>
+            <h2>Budaya bukan sekadar warisan masa lalu</h2>
+
+            <p>
+                Pendidikan membantu seseorang menambah pengetahuan,
+                mengembangkan keterampilan, dan membentuk sikap untuk
+                kehidupan sehari-hari. Karena itu, keberhasilannya tidak
+                cukup diukur dari nilai akademik. Sikap hormat, jujur,
+                bertanggung jawab, dan peduli pada lingkungan sosial juga
+                merupakan bagian penting dari proses belajar.
+            </p>
+
+            <p>
+                Nilai-nilai tersebut tumbuh dalam kehidupan sehari-hari,
+                termasuk melalui budaya. Budaya mencakup bahasa, kesenian,
+                tradisi, kebiasaan, dan cara hidup. Di Indonesia, kekayaan
+                ini tampak dalam batik, angklung, tari tradisional, bahasa
+                daerah, hingga gotong royong—semuanya menjadi bagian dari
+                identitas bangsa.
+            </p>
+
+            <p>
+                Di sinilah pendidikan dan budaya saling menguatkan.
+                Pendidikan mengenalkan dan mengembangkan kebudayaan,
+                sementara budaya memberi konteks yang dekat dengan hidup
+                peserta didik. Dengan memadukan keduanya, sekolah dapat
+                mengajarkan ilmu pengetahuan sekaligus menanamkan nilai
+                budaya yang positif.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ketika pendidikan bertemu budaya</h2>
+
+            <p>
+                Hubungan pendidikan dan budaya terlihat dalam cara kita
+                belajar. Pendidikan membantu seseorang memahami nilai yang
+                hidup di masyarakat, sementara budaya ikut membentuk
+                perilaku. Maka, proses belajar tak hanya berlangsung di
+                kelas, tetapi juga melalui pengalaman bersama keluarga
+                dan masyarakat.
+            </p>
+
+            <p>
+                Gagasan Ki Hadjar Dewantara tentang pendidikan yang berakar
+                pada kebudayaan bangsa memperkuat hubungan tersebut.
+                Pendidikan, menurut semangat pemikirannya, perlu membantu
+                peserta didik mengembangkan diri tanpa kehilangan jati
+                diri. Gagasan ini tetap relevan: generasi muda perlu
+                menguasai ilmu pengetahuan dan teknologi, sekaligus
+                memahami budaya yang membentuk identitasnya.
+            </p>
+
+            <p>
+                Sejalan dengan itu, <a href="#ref-musanna">Musanna (2017)</a> menekankan
+                pentingnya warisan budaya sebagai landasan pendidikan.
+                Nilai budaya dapat membantu membentuk karakter, tetapi
+                penerapannya perlu mengikuti perkembangan zaman. Jadi,
+                budaya bukan hanya diwariskan begitu saja; nilai-nilainya
+                perlu dipahami secara kritis agar tetap bermakna dalam
+                kehidupan modern.
+            </p>
+        </section>
+
+        <section id="merawat-budaya">
+            <h2>Bagaimana sekolah merawat budaya?</h2>
+
+            <aside class="info-box" aria-label="Informasi">
+                <p>Budaya lebih mudah dipahami ketika siswa mengalaminya langsung, bukan hanya menghafal nama dan sejarahnya.</p>
+            </aside>
+
+            <h3>Mengenalkan budaya dengan pengalaman langsung</h3>
+
+            <p>
+                Sekolah bisa menjadi ruang pertama bagi siswa untuk
+                mengenal kekayaan budaya Indonesia. Caranya beragam:
+                melalui pelajaran seni dan sejarah, bahasa daerah,
+                ekstrakurikuler, atau kunjungan ke tempat bersejarah.
+                Dengan pengalaman langsung, siswa tak hanya menghafal
+                nama tradisi, tetapi juga memahami makna di baliknya.
+                Pendekatan ini sejalan dengan Konvensi UNESCO 2003, yang
+                mendorong pendidikan dan kesadaran untuk menghargai
+                warisan budaya takbenda <a href="#ref-unesco">(UNESCO, 2003)</a>.
+            </p>
+
+            <h3>Belajar menghargai perbedaan</h3>
+
+            <p>
+                Pengalaman budaya juga membantu membentuk karakter.
+                Gotong royong, musyawarah, sopan santun, dan sikap saling
+                menghormati bisa diterapkan dalam kegiatan belajar maupun
+                keseharian. Saat mengenal budaya yang berbeda, siswa pun
+                berlatih memahami dan menghargai perbedaan.
+            </p>
+
+            <p>
+                Pentingnya pembentukan karakter ini sejalan dengan kajian
+                <a href="#ref-damayanti">Damayanti, Japar, dan Maiwan (2021)</a> tentang pemikiran
+                Ki Hadjar Dewantara mengenai budi pekerti. Pendidikan
+                bukan hanya soal pengetahuan, tetapi juga tentang sikap
+                dan perilaku. Kebiasaan baik, adat istiadat, dan budaya
+                daerah dapat menjadi bagian dari proses tersebut.
+            </p>
+
+            <p>
+                Agar nilai-nilai itu terasa dekat, sekolah dapat
+                membangun kebiasaan positif dan menyediakan ruang bagi
+                kegiatan seni. Permainan tradisional juga bisa menjadi
+                pilihan yang seru sekaligus mengajak siswa mencoba
+                alternatif hiburan modern.
+            </p>
+
+            <h3>Mengembangkan budaya dengan kreativitas</h3>
+
+            <p>
+                Melestarikan budaya bukan berarti menolak perubahan.
+                Generasi muda justru bisa memanfaatkan kreativitas dan
+                media digital untuk memperkenalkannya lewat video edukasi,
+                poster, pameran, atau pertunjukan seni. Misalnya, siswa
+                dapat membuat video tentang proses membatik atau
+                mengenalkan alat musik tradisional di media sosial.
+            </p>
+
+            <p>
+                Teknologi pun dapat memperluas jangkauan pengenalan
+                budaya. Bentuk penyajiannya boleh berubah, asalkan nilai
+                dan maknanya tetap dijaga agar identitas budaya tidak
+                memudar.
+            </p>
+        </section>
+
+        <section class="interview" aria-labelledby="wawancara">
+            <h2 id="wawancara">Hasil wawancara</h2>
+            <p class="interview-result">
+                <strong>Narasumber: Encep Turnawan</strong> menilai pendidikan budaya
+                penting untuk membentuk karakter siswa sekaligus menjaga
+                ciri khas bangsa. Menurutnya, sekolah dapat mengenalkan
+                budaya lewat pembiasaan dan kegiatan seni. Generasi muda
+                juga berperan dengan mengapresiasi serta ikut serta dalam
+                kegiatan budaya, termasuk permainan tradisional.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tantangan merawat budaya di era digital</h2>
+
+            <p>
+                Teknologi dan globalisasi membuka banyak peluang bagi
+                pendidikan. Informasi lebih mudah diakses, komunikasi
+                berlangsung cepat, dan siswa dapat mengenal budaya dari
+                berbagai negara. Namun, kemudahan ini juga menghadirkan
+                tantangan: bagaimana menjaga budaya lokal tetap hidup?
+            </p>
+
+            <p>
+                Salah satu tantangannya ialah minat sebagian generasi
+                muda terhadap bahasa daerah, permainan tradisional, dan
+                kesenian lokal yang mulai berkurang. Hiburan digital
+                mudah menyita perhatian, sehingga kegiatan budaya di
+                sekitar mereka kerap terabaikan.
+            </p>
+
+            <p>
+                Tantangan berikutnya adalah membuat pembelajaran budaya
+                terasa relevan. Jika hanya mengandalkan hafalan, siswa
+                mungkin sulit melihat manfaatnya. Sekolah dapat
+                menawarkan pengalaman yang lebih nyata, seperti praktik
+                kesenian, dokumentasi tradisi lokal, diskusi dengan
+                tokoh budaya, atau proyek bersama masyarakat.
+            </p>
+
+            <p>
+                Pentingnya kerja bersama ini juga tercermin dalam kajian
+                <a href="#ref-zahrani">Zahrani dan rekan-rekannya (2024)</a> tentang sinergi
+                pendidikan dan kebudayaan dalam pemikiran Ki Hadjar
+                Dewantara. Pendidikan dan budaya berperan dalam
+                membentuk manusia; karena itu, pelestariannya perlu
+                melibatkan sekolah, keluarga, dan masyarakat.
+            </p>
+        </section>
+
+        <section>
+            <h2>Langkah sederhana yang bisa dilakukan bersama</h2>
+
+            <p>
+                Lalu, apa yang bisa dilakukan? Keluarga dapat mengenalkan
+                bahasa daerah, cerita rakyat, dan kebiasaan positif sejak
+                dini. Sekolah bisa memasukkan kegiatan budaya ke dalam
+                pelajaran dan ekstrakurikuler. Sementara itu, masyarakat
+                dapat mengajak generasi muda terlibat dalam kesenian,
+                tradisi, dan pelestarian tempat bersejarah. Dengan ikut
+                berpartisipasi dan memberi apresiasi, mereka turut
+                menjaga budaya serta adab Nusantara.
+            </p>
+
+            <p>
+                Dukungan pemerintah dan lembaga kebudayaan juga penting,
+                misalnya melalui penyediaan fasilitas, dokumentasi, dan
+                program pendidikan tentang warisan lokal. Generasi muda
+                dapat melengkapi upaya ini dengan menggunakan teknologi
+                secara bijak untuk merekam tradisi dan menyebarkan
+                informasi yang akurat.
+            </p>
+
+            <p>
+                Agar hasilnya bertahan, semua upaya tersebut perlu
+                dilakukan secara konsisten. Pelestarian budaya bukan
+                sekadar menggelar acara tahunan, melainkan membangun
+                kebiasaan untuk memahami, menghargai, dan menerapkan
+                nilai-nilai budaya dalam kehidupan sehari-hari.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contoh kegiatan budaya yang mudah dilakukan</h2>
+
+            <h3>Mengumpulkan cerita dari keluarga</h3>
+            <p>
+                Siswa bisa mewawancarai orang tua atau kakek-nenek tentang
+                cerita rakyat, makanan khas, permainan masa kecil, atau
+                kebiasaan dari daerah asal keluarga. Hasilnya dapat
+                dirangkum menjadi tulisan atau poster dengan mencantumkan
+                nama narasumber.
+            </p>
+
+            <h3>Mencoba permainan tradisional</h3>
+            <p>
+                Sekolah dapat mengajak siswa mencoba permainan tradisional
+                setempat. Selain bergerak dan bekerja sama, mereka bisa
+                membahas aturan permainan serta nilai kejujuran,
+                sportivitas, dan kebersamaan.
+            </p>
+
+            <h3>Membuat peta budaya lingkungan</h3>
+            <p>
+                Dalam kelompok, siswa dapat memetakan kesenian, bahasa,
+                makanan, tempat bersejarah, atau tradisi di lingkungan
+                sekitar. Agar informasinya akurat dan tetap menghormati
+                makna budaya, siswa sebaiknya memeriksanya bersama warga
+                atau narasumber.
+            </p>
+        </section>
+
+        <section>
+            <h2>Penutup: Maju tanpa kehilangan akar</h2>
+
+            <p>
+                Pendidikan dan budaya saling mendukung dalam membentuk
+                generasi yang berpengetahuan, berkarakter, dan menghargai
+                keberagaman. Pendidikan mengenalkan budaya, menanamkan
+                nilai moral, dan menumbuhkan toleransi. Budaya, pada
+                gilirannya, membantu siswa memahami identitas serta
+                kehidupan masyarakatnya.
+            </p>
+
+            <p>
+                Di tengah perkembangan teknologi dan globalisasi,
+                keduanya perlu disikapi dengan bijak. Teknologi dapat
+                memperkenalkan budaya kepada khalayak yang lebih luas,
+                sementara pendidikan membekali generasi muda agar
+                memahaminya secara kritis dan bertanggung jawab. Dengan
+                kerja sama keluarga, sekolah, masyarakat, dan pemerintah,
+                pendidikan dapat terus maju tanpa memutus akar budaya.
+            </p>
+        </section>
+
+        <section id="referensi">
+            <h2>Daftar Pustaka</h2>
+
+            <ol class="daftar-pustaka">
+                <li id="ref-damayanti">
+                    Damayanti, A., Japar, M., &amp; Maiwan, M. (2021).
+                    Pemikiran Ki Hadjar Dewantara tentang budi pekerti.
+                    <em>Jurnal Pendidikan Kewarganegaraan, 11</em>(2).
+                    <a href="https://ppjp.ulm.ac.id/journal/index.php/pkn/article/view/12252"
+                       target="_blank" rel="noopener noreferrer">
+                        https://ppjp.ulm.ac.id/journal/index.php/pkn/article/view/12252
+                    </a>
+                </li>
+
+                <li id="ref-musanna">
+                    Musanna, A. (2017). Indigenisasi pendidikan:
+                    Rasionalitas revitalisasi praksis pendidikan
+                    Ki Hadjar Dewantara.
+                    <em>Jurnal Pendidikan dan Kebudayaan, 2</em>(1),
+                    117–133.
+                    <a href="https://doi.org/10.24832/jpnk.v2i1.529"
+                       target="_blank" rel="noopener noreferrer">
+                        https://doi.org/10.24832/jpnk.v2i1.529
+                    </a>
+                </li>
+
+                <li id="ref-zahrani">
+                    Zahrani, A. M., Aisy, D. N. R., Frederica, H.,
+                    Sholihah, I. F., Wahyuni, L.,
+                    Kusumaningtyas, V. A., &amp; Widyartono, D. (2024).
+                    Sinergisitas pendidikan dan kebudayaan dalam
+                    pandangan Ki Hadjar Dewantara.
+                    <em>Jurnal Integrasi dan Harmoni Inovatif
+                    Ilmu-Ilmu Sosial, 4</em>(4).
+                    <a href="https://doi.org/10.17977/um063v4i4p2"
+                       target="_blank" rel="noopener noreferrer">
+                        https://doi.org/10.17977/um063v4i4p2
+                    </a>
+                </li>
+
+                <li id="ref-unesco">
+                    UNESCO. (2003). <em>Convention for the Safeguarding
+                    of the Intangible Cultural Heritage</em>.
+                    <a href="https://ich.unesco.org/en/convention-00022"
+                       target="_blank" rel="noopener noreferrer">
+                        https://ich.unesco.org/en/convention-00022
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="comments" aria-labelledby="comments-heading">
+            <h2 id="comments-heading">Komentar</h2>
+            <form class="comment-form" id="comment-form">
+                <label for="comment-name">
+                    Nama
+                    <input id="comment-name" name="name" type="text" maxlength="60" required>
+                </label>
+                <label for="comment-message">
+                    Tulis komentar
+                    <textarea id="comment-message" name="message" maxlength="1000" required></textarea>
+                </label>
+                <button type="submit">Kirim komentar</button>
+            </form>
+            <ul class="comment-list" id="comment-list" aria-live="polite"></ul>
+        </section>
+
+        <section class="fun-ending" aria-labelledby="fun-heading">
+            <h2 id="fun-heading">Hiburan kecil sebelum pulang 😊</h2>
+            <p class="fun-intro">Siap menerima tebak-tebakan receh random?</p>
+            <button class="joke-button" id="joke-button" type="button">
+                Kasih tebak-tebakan! 🎲
+            </button>
+            <p class="joke-question" id="joke-question" aria-live="polite">
+                Tekan tombolnya—jangan takut, yang diuji cuma selera humor!
+            </p>
+            <details id="joke-answer" hidden>
+                <summary>Lihat jawaban</summary>
+                <p class="fun-answer" id="joke-answer-text"></p>
+            </details>
+            <p class="fun-closing">Terima kasih sudah membaca. Semoga harimu sehangat gotong royong dan seceria bunyi angklung! 🌼</p>
+        </section>
+
+        <footer>
+            Artikel Ilmiah Populer: Pendidikan dan Budaya
+        </footer>
+
+    </main>
+
+    <script>
+        const jokes = [
+            {
+                question: "Sayur apa yang paling dingin?",
+                answer: "Kol-kas. 🥬"
+            },
+            {
+                question: "Buah apa yang durhaka?",
+                answer: "Melon Kundang. 🍈"
+            },
+            {
+                question: "Ikan apa yang suka berhenti sebentar?",
+                answer: "Ikan pause. 🐟"
+            },
+            {
+                question: "Kenapa komputer bisa masuk angin?",
+                answer: "Karena kebanyakan buka Windows. 🪟"
+            },
+            {
+                question: "Apa bahasa Inggrisnya nasi?",
+                answer: "Rice. Kalau nasi goreng, ya fried rice. Kalau nasi uduk… uduk sendiri. 🍚"
+            },
+            {
+                question: "Hewan apa yang paling kaya?",
+                answer: "Beruang. Soalnya punya banyak uang. 🐻"
+            },
+            {
+                question: "Kenapa pintu nggak pernah sombong?",
+                answer: "Karena selalu terbuka. 🚪"
+            },
+            {
+                question: "Kopi apa yang bikin capek?",
+                answer: "Kopikirin kamu terus. ☕"
+            },
+            {
+                question: "Kenapa kalender kelihatan kurus?",
+                answer: "Karena tanggalnya terus berkurang. 📅"
+            },
+            {
+                question: "Benda apa yang kalau dipukul malah senang?",
+                answer: "Bedug. Dipukul malah bunyi, duk duk duk. 🥁"
+            }
+        ];
+
+        const jokeButton = document.querySelector("#joke-button");
+        const jokeQuestion = document.querySelector("#joke-question");
+        const jokeAnswer = document.querySelector("#joke-answer");
+        const jokeAnswerText = document.querySelector("#joke-answer-text");
+        let previousJoke = -1;
+
+        jokeButton.addEventListener("click", () => {
+            let jokeIndex;
+            do {
+                jokeIndex = Math.floor(Math.random() * jokes.length);
+            } while (jokes.length > 1 && jokeIndex === previousJoke);
+
+            previousJoke = jokeIndex;
+            jokeQuestion.textContent = jokes[jokeIndex].question;
+            jokeAnswerText.textContent = jokes[jokeIndex].answer;
+            jokeAnswer.hidden = false;
+            jokeAnswer.open = false;
+        });
+
+        const commentForm = document.querySelector("#comment-form");
+        const commentList = document.querySelector("#comment-list");
+        const commentsStorageKey = "artikel-budaya-comments";
+        let comments = [];
+
+        try {
+            comments = JSON.parse(localStorage.getItem(commentsStorageKey) || "[]");
+            if (!Array.isArray(comments)) comments = [];
+        } catch {
+            comments = [];
+        }
+
+        function renderComments() {
+            commentList.replaceChildren();
+
+            if (comments.length === 0) {
+                const emptyMessage = document.createElement("li");
+                emptyMessage.className = "empty-comments";
+                emptyMessage.textContent = "Belum ada komentar. Jadilah yang pertama!";
+                commentList.append(emptyMessage);
+                return;
+            }
+
+            comments.forEach((comment) => {
+                const item = document.createElement("li");
+                item.className = "comment-item";
+
+                const author = document.createElement("strong");
+                author.textContent = comment.name;
+                item.append(author);
+
+                const date = document.createElement("span");
+                date.className = "comment-date";
+                date.textContent = comment.date;
+                item.append(date);
+
+                const message = document.createElement("p");
+                message.textContent = comment.message;
+                item.append(message);
+                commentList.append(item);
+            });
+        }
+
+        renderComments();
+
+        commentForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const formData = new FormData(commentForm);
+            const name = formData.get("name").trim();
+            const message = formData.get("message").trim();
+
+            if (!name || !message) return;
+
+            comments.unshift({
+                name,
+                message,
+                date: new Intl.DateTimeFormat("id-ID", { dateStyle: "medium" }).format(new Date())
+            });
+
+            try {
+                localStorage.setItem(commentsStorageKey, JSON.stringify(comments));
+            } catch {
+                // Komentar tetap tampil sampai halaman dimuat ulang jika penyimpanan tidak tersedia.
+            }
+
+            renderComments();
+            commentForm.reset();
+        });
+    </script>
+</body>
+</html>
